@@ -19,12 +19,14 @@
             content="Walter Caballero, Desarrollador Web, San Luis, Investigador, PHP, Laravel, React, Python"
         />
     </head>
-    <body class="bg-slate-50 text-slate-900 font-sans selection:bg-blue-100">
+    <body
+        class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-100 dark:selection:bg-blue-900 transition-colors duration-300"
+    >
         <div id="app" class="min-h-screen flex items-center justify-center p-6">
             <main class="max-w-2xl w-full space-y-8">
                 <header class="space-y-4">
                     <div
-                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wider border border-blue-100"
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-semibold uppercase tracking-wider border border-blue-100 dark:border-blue-800"
                     >
                         <span class="relative flex h-2 w-2">
                             <span
@@ -37,11 +39,16 @@
                         Sitio en construcción
                     </div>
                     <h1
-                        class="text-5xl font-extrabold tracking-tight text-slate-950 sm:text-6xl"
+                        class="text-5xl font-extrabold tracking-tight text-slate-950 dark:text-white sm:text-6xl"
                     >
-                        Walter <span class="text-blue-600">Caballero</span>
+                        Walter
+                        <span class="text-blue-600 dark:text-blue-500"
+                            >Caballero</span
+                        >
                     </h1>
-                    <p class="text-xl text-slate-600 leading-relaxed max-w-lg">
+                    <p
+                        class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-lg"
+                    >
                         Desarrollador Web Fullstack y Profesor Universitario
                         Investigador. Fusionando la academia con el desarrollo
                         de software moderno.
@@ -50,151 +57,176 @@
 
                 <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div
-                        class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-blue-200 transition-colors"
+                        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:border-blue-200 dark:hover:border-blue-800 transition-colors"
                     >
-                        <h3 class="font-bold text-slate-800">Especialidades</h3>
-                        <p class="text-sm text-slate-500 mt-1">
+                        <h3
+                            class="font-bold text-slate-800 dark:text-slate-200"
+                        >
+                            Especialidades
+                        </h3>
+                        <p
+                            class="text-sm text-slate-500 dark:text-slate-400 mt-1"
+                        >
                             PHP, Laravel, React & Python para Análisis de Datos.
                         </p>
                     </div>
                     <div
-                        class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-blue-200 transition-colors"
+                        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:border-blue-200 dark:hover:border-blue-800 transition-colors"
                     >
-                        <h3 class="font-bold text-slate-800">Ubicación</h3>
-                        <p class="text-sm text-slate-500 mt-1">
+                        <h3
+                            class="font-bold text-slate-800 dark:text-slate-200"
+                        >
+                            Ubicación
+                        </h3>
+                        <p
+                            class="text-sm text-slate-500 dark:text-slate-400 mt-1"
+                        >
                             San Luis, Argentina.
                         </p>
                     </div>
                 </section>
 
                 <section
-                    class="mt-12 p-8 bg-white rounded-3xl border border-slate-200 shadow-sm"
+                    class="mt-12 p-8 bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm"
                 >
-                    <h2 class="text-2xl font-bold text-slate-900 mb-6">
-                        Contacto
-                    </h2>
-                    <form id="contact-form" class="space-y-4">
-                        <div>
-                            <label
-                                class="block text-sm font-medium text-slate-700 mb-1"
-                                >Tu Email</label
-                            >
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="Tu Email"
-                                required
-                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                class="block text-sm font-medium text-slate-700 mb-1"
-                                >Mensaje</label
-                            >
-                            <textarea
-                                name="message"
-                                id="message"
-                                placeholder="Tu Mensaje"
-                                required
-                                rows="4"
-                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                            ></textarea>
-                        </div>
-                        <button
-                            type="submit"
-                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-all transform active:scale-95 shadow-lg shadow-blue-200"
+                    <div id="contact-container">
+                        <h2
+                            class="text-2xl font-bold text-slate-900 dark:text-white mb-6"
                         >
-                            Enviar Mensaje
-                        </button>
-                    </form>
+                            Contacto
+                        </h2>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label
+                                    class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1"
+                                    >Tu Email</label
+                                >
+                                <input
+                                    type="email"
+                                    id="email"
+                                    required
+                                    placeholder="tu@email.com"
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1"
+                                    >Mensaje</label
+                                >
+                                <textarea
+                                    id="message"
+                                    required
+                                    rows="4"
+                                    placeholder="¿En qué puedo ayudarte?"
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                ></textarea>
+                            </div>
+                            <div class="hidden" aria-hidden="true">
+                                <input
+                                    type="text"
+                                    id="honeypot"
+                                    tabindex="-1"
+                                    autocomplete="off"
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-all transform active:scale-95 shadow-lg shadow-blue-200 dark:shadow-none"
+                            >
+                                Enviar Mensaje
+                            </button>
+                        </form>
 
-                    <div
-                        id="success-message"
-                        class="hidden py-12 text-center space-y-4 animate-in fade-in zoom-in duration-500"
-                    >
                         <div
-                            class="mx-auto w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center"
+                            id="success-message"
+                            class="hidden py-8 text-center space-y-4"
                         >
-                            <svg
-                                class="w-8 h-8"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
+                            <div
+                                class="mx-auto w-16 h-16 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center"
                             >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M5 13l4 4L19 7"
-                                ></path>
-                            </svg>
+                                <svg
+                                    class="w-8 h-8"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-slate-900 dark:text-white"
+                            >
+                                ¡Mensaje enviado!
+                            </h3>
+                            <p class="text-slate-500 dark:text-slate-400">
+                                Gracias, Walter te responderá pronto.
+                            </p>
+                            <button
+                                onclick="location.reload()"
+                                class="text-sm font-medium text-blue-600 dark:text-blue-400 underline"
+                            >
+                                Enviar otro
+                            </button>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900">
-                            ¡Mensaje enviado!
-                        </h3>
-                        <p class="text-slate-500">
-                            Gracias por contactarte. Te responderé a la
-                            brevedad.
-                        </p>
-                        <button
-                            onclick="location.reload()"
-                            class="text-sm font-medium text-blue-600 hover:text-blue-700 underline"
-                        >
-                            Enviar otro mensaje
-                        </button>
                     </div>
-
-                    <script>
-                        document
-                            .getElementById("contact-form")
-                            .addEventListener("submit", async (e) => {
-                                e.preventDefault();
-                                const response = await fetch("/api/send", {
-                                    method: "POST",
-                                    headers: {
-                                        "Content-Type": "application/json",
-                                    },
-                                    body: JSON.stringify({
-                                        email: document.getElementById("email")
-                                            .value,
-                                        message:
-                                            document.getElementById("message")
-                                                .value,
-                                    }),
-                                });
-                                if (response.ok)
-                                    alert("¡Mensaje enviado con éxito!");
-                            });
-                    </script>
                 </section>
 
                 <footer class="flex flex-wrap items-center gap-6 pt-4">
                     <a
                         href="mailto:waltercaballero@gmail.com"
-                        class="text-sm font-bold text-slate-900 hover:text-blue-600 underline decoration-2 underline-offset-4 transition-colors"
-                        target="_blank"
+                        class="text-sm font-bold text-slate-900 dark:text-slate-200 hover:text-blue-600 underline decoration-2 underline-offset-4 transition-colors"
                     >
-                        Enviar Email
+                        Email
                     </a>
                     <a
                         href="https://www.linkedin.com/in/waltercaballero/"
-                        class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
                         target="_blank"
+                        class="text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors"
                     >
                         LinkedIn
                     </a>
                     <a
                         href="https://github.com/waltercaballero"
-                        class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
                         target="_blank"
+                        class="text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors"
                     >
                         GitHub
                     </a>
                 </footer>
             </main>
         </div>
+
+        <button
+            id="theme-toggle"
+            class="fixed bottom-6 right-6 p-3 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl hover:scale-110 transition-all z-50"
+        >
+            <svg
+                id="theme-toggle-light-icon"
+                class="hidden w-6 h-6 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+            >
+                <path
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                ></path>
+            </svg>
+            <svg
+                id="theme-toggle-dark-icon"
+                class="hidden w-6 h-6 text-slate-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+            >
+                <path
+                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                ></path>
+            </svg>
+        </button>
 
         <script type="module" src="/src/main.js"></script>
     </body>

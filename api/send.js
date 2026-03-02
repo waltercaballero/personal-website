@@ -6,7 +6,11 @@ export default async function handler(req, res) {
   if (req.method !== "POST")
     return res.status(405).json({ error: "Method not allowed" });
 
-  const { email, message } = req.body;
+  const { email, message, honeypot } = req.body;
+
+  if (honeypot) {
+    return res.status(200).json({ message: "Spam detected" });
+  }
 
   try {
     const data = await resend.emails.send({
