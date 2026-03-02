@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Walter Caballero | Dev & Investigador</title>
+        <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon.png"
+        />
+        <meta
+            name="description"
+            content="Sitio personal de Walter Caballero. Desarrollador Web Fullstack e Investigador Universitario en San Luis, Argentina. Especialista en PHP, Laravel y Análisis de Datos."
+        />
+        <meta
+            name="keywords"
+            content="Walter Caballero, Desarrollador Web, San Luis, Investigador, PHP, Laravel, React, Python"
+        />
+    </head>
+    <body class="bg-slate-50 text-slate-900 font-sans selection:bg-blue-100">
+        <div id="app" class="min-h-screen flex items-center justify-center p-6">
+            <main class="max-w-2xl w-full space-y-8">
+                <header class="space-y-4">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wider border border-blue-100"
+                    >
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"
+                            ></span>
+                            <span
+                                class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"
+                            ></span>
+                        </span>
+                        Sitio en construcción
+                    </div>
+                    <h1
+                        class="text-5xl font-extrabold tracking-tight text-slate-950 sm:text-6xl"
+                    >
+                        Walter <span class="text-blue-600">Caballero</span>
+                    </h1>
+                    <p class="text-xl text-slate-600 leading-relaxed max-w-lg">
+                        Desarrollador Web Fullstack y Profesor Universitario
+                        Investigador. Fusionando la academia con el desarrollo
+                        de software moderno.
+                    </p>
+                </header>
+
+                <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div
+                        class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-blue-200 transition-colors"
+                    >
+                        <h3 class="font-bold text-slate-800">Especialidades</h3>
+                        <p class="text-sm text-slate-500 mt-1">
+                            PHP, Laravel, React & Python para Análisis de Datos.
+                        </p>
+                    </div>
+                    <div
+                        class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-blue-200 transition-colors"
+                    >
+                        <h3 class="font-bold text-slate-800">Ubicación</h3>
+                        <p class="text-sm text-slate-500 mt-1">
+                            San Luis, Argentina.
+                        </p>
+                    </div>
+                </section>
+
+                <section
+                    class="mt-12 p-8 bg-white rounded-3xl border border-slate-200 shadow-sm"
+                >
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">
+                        Contacto
+                    </h2>
+                    <form
+                        action="https://formspree.io/f/tu_id_aca"
+                        method="POST"
+                        class="space-y-4"
+                    >
+                        <div>
+                            <label
+                                class="block text-sm font-medium text-slate-700 mb-1"
+                                >Tu Email</label
+                            >
+                            <input
+                                type="email"
+                                name="email"
+                                required
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-sm font-medium text-slate-700 mb-1"
+                                >Mensaje</label
+                            >
+                            <textarea
+                                name="message"
+                                required
+                                rows="4"
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                            ></textarea>
+                        </div>
+                        <button
+                            type="submit"
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-all transform active:scale-95 shadow-lg shadow-blue-200"
+                        >
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </section>
+
+                <footer class="flex flex-wrap items-center gap-6 pt-4">
+                    <a
+                        href="mailto:waltercaballero@gmail.com"
+                        class="text-sm font-bold text-slate-900 hover:text-blue-600 underline decoration-2 underline-offset-4 transition-colors"
+                        target="_blank"
+                    >
+                        Enviar Email
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/waltercaballero/"
+                        class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
+                        target="_blank"
+                    >
+                        LinkedIn
+                    </a>
+                    <a
+                        href="https://github.com/waltercaballero"
+                        class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
+                        target="_blank"
+                    >
+                        GitHub
+                    </a>
+                </footer>
+            </main>
+        </div>
+
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
