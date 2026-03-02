@@ -1,5 +1,6 @@
 import "./style.css";
 import { inject } from "@vercel/analytics";
+import { injectSpeedInsights } from "@vercel/speed-insights";
 
-// Inicializa Vercel Analytics
 inject();
+injectSpeedInsights();
