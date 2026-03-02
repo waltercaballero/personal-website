@@ -110,6 +110,42 @@
                         </button>
                     </form>
 
+                    <div
+                        id="success-message"
+                        class="hidden py-12 text-center space-y-4 animate-in fade-in zoom-in duration-500"
+                    >
+                        <div
+                            class="mx-auto w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center"
+                        >
+                            <svg
+                                class="w-8 h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">
+                            ¡Mensaje enviado!
+                        </h3>
+                        <p class="text-slate-500">
+                            Gracias por contactarte. Te responderé a la
+                            brevedad.
+                        </p>
+                        <button
+                            onclick="location.reload()"
+                            class="text-sm font-medium text-blue-600 hover:text-blue-700 underline"
+                        >
+                            Enviar otro mensaje
+                        </button>
+                    </div>
+
                     <script>
                         document
                             .getElementById("contact-form")
